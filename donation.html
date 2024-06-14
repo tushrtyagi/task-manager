@@ -1,79 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOCIAL FOUNDATION | Vanadhaar.com</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
             color: #333;
         }
-        form {
-            display: flex;
-            flex-direction: column;
+        .faq h4 {
+            font-size: 1.25rem;
+            color: #0056b3;
+            margin-top: 10px;
         }
-        label {
-            margin-bottom: 5px;
-            color: #666;
+        .faq p {
+            font-size: 1rem;
+            color: #555;
         }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        select {
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .form-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        input[type="submit"] {
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #28a745;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        .form-group label {
+            font-weight: bold;
+            color: #333;
         }
-        input[type="submit"]:hover {
-            background-color: #218838;
+        .help-section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .help-section ul li {
+            font-size: 1rem;
+            color: #555;
+        }
+        .help-section ul li a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .help-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .carousel-item {
+            height: 400px; /* Adjust the height as needed */
+            background-size: cover;
+            background-position: center center;
+        }
+        .carousel-caption h2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white; /* Adds a semi-transparent background */
+            padding: 40px;
+            border-radius: 5px;
+            position:relative;
+            bottom: 70px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Make a Donation</h1>
-        <form action="/submit_donation" method="POST">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+<header class="container-fluid">
+    <div id="menu-jk" class="header-bottom">
+        <div class="container">
+            <div class="row nav-row">
+                <div class="col-lg-3 col-md-12 logo">
+                    <a href="index.html">
+                        <img src="assets/images/LOGO.jpeg" alt="">
+                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none small-menu fa-bars"></i></a>
+                    </a>
+                </div>
+                <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+                    <ul class="navbad">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link add" href="donation.html">Tax Exemption</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</header>
 
-            <label for="amount">Donation Amount</label>
-            <input type="number" id="amount" name="amount" required>
-
-            <label for="payment-method">Payment Method</label>
-            <select id="payment-method" name="payment_method" required>
-                <option value="credit_card">Credit Card</option>
-                <option value="debit_card">Debit Card</option>
-                <option value="net_banking">Net Banking</option>
-            </select>
-
-            <input type="submit" value="Donate Now">
-        </form>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/images/misin.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block mb-5">
+                <h2 class="text-uppercase ">Get tax benefit under section 80G on donation</h2>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="section-title">Tax Exemption Donation FAQ</h2>
+            <p>We know donations are good! And the Section 80G Income Tax Act provides the noblest way to save tax in India – that is by donating funds to organizations specified in the Act. It is a special provision that allows taxpayers to be exempt from paying taxes.</p>
+
+            <h4 class="section-title">How will my tax saving donation make a difference?</h4>
+            <p>Your donation to VANADHAAR’s Academic Support Centres ensures children receive vital educational and psychosocial support, bridging learning gaps, fostering confidence, and empowering them for brighter futures. Join us in impacting lives, with the added benefit of tax savings.</p>
+
+            <h4 class="section-title">What is the deduction under Section 80g of the Income Tax Act?</h4>
+            <p>The Income Tax Act has a provision known as Section 80G that enables taxpayers to deduct a variety of contributions made as charitable donations. Donations to the designated non-profits/ NGOs and charity organizations are eligible for the Act’s deduction. When filing the income tax return, the amount donated may be deducted as per section 80G.</p>
+            <p>The donation would not be eligible for a deduction if it was made while the 80G registration of charity/ trust/ non-profit was not active.</p>
+
+            <h4 class="section-title">How does tax exemption donation help in saving tax?</h4>
+            <p>Tax exemption donation reduces the tax liability of the donor by decreasing his/ her taxable income under the 80G section of IT. Only registered charities/ trusts/ non-profits are eligible to issue 80G tax receipts and it decreases taxable salary by 50% of the donated amount. Here’s an example – if your yearly taxable income is ₹7,00,000 and you make a donation of ₹10,000 then your net taxable income will become ₹6,95,000. Your income tax will now be calculated on this reduced taxable income based on the current tax rates.</p>
+
+            <h4 class="section-title">How can I claim the 80G tax benefit?</h4>
+            <p>All donations made to VANADHAAR NGO are eligible for a 50% deduction from taxable income under Section 80G of the Income Tax Act. Child Rights and You (VANADHAAR) – India’s most trusted NGO is registered under the act with charity number F-0005208(GBR) and has the approval of the IT department under the 80G section. By donating to VANADHAAR charity you can not only help children in India but also get a tax deduction benefit. After making a donation, you will get a certificate under Section 80G with a receipt that can be used while filing income tax returns (ITR) for tax deductions. It reduces the tax liability by 50% of the donated amount.</p>
+
+            <h4 class="section-title">What is the minimum amount that needs to be donated to get a tax exemption?</h4>
+            <p>While there is no specified minimum amount to avail of tax exemption under IT section 80G for online donation, we request all supporters to donate a minimum of ₹ 1000 as it helps us to take care of documentation expenses.</p>
+
+            <h4 class="section-title">Are there any tax exemptions on cash donations as well?</h4>
+            <p>As per the revised IT rules, any cash donation above ₹ 2,000 is not eligible for an 80G certificate. In the interest of transparency and accountability, VANADHAAR NGO does not accept cash donations.</p>
+
+            <h4 class="section-title">Does VANADHAAR issue Tax receipts? How long does it take to generate 80G tax receipts?</h4>
+            <p>Yes, VANADHAAR – Child Rights and You issues tax receipts for all donations made. The tax receipts are emailed at the shared address and sent on WhatsApp after making the donation.</p>
+
+            <h4 class="section-title">What is needed while making 80G donation?</h4>
+            <p>We request all donors to provide the correct PAN card number, email address, and other contact details. It also helps the Income Tax department in auto-populating donation details while filing Income Tax Returns. As per the latest income tax rules, VANADHAAR is required to upload all donation details on the income tax website under form 10 BD and generate a certificate as per form 10BE.</p>
+
+            <h4 class="section-title">When can I get a tax exemption certificate?</h4>
+            <p>For online donations, 80G certificates are generated within 10 days. The receipts are sent to the email address shared by donors while completing the online donation form. For offline contributions, it takes close to 15 to 20 days.</p>
+
+            <h4 class="section-title">What if my tax receipt is lost or misplaced?</h4>
+            <p>You can send a mail to writetous@VANADHAARmail.org to request a duplicate copy.</p>
+
+            <h4 class="section-title">I am an NRI (Non-Resident Indian). Will I get a tax exemption on my donation?</h4>
+            <p>NRI (Non-Resident Indian) donors, who are Indian citizens, holding an Indian passport are eligible to tax exemption under section 80 G of the Income Tax Act. Please ensure to mention your Indian PAN Card Number in the online donation form to avail of the tax benefits. For further queries please write to</p>
+
+            <h4 class="section-title">If I am a resident of the U.S. subject to US income tax will I get a tax exemption?</h4>
+            <p>You can avail of tax exemption under US Laws, by making a donation to VANADHAAR America (USA) at <a href="https://www.VANADHAARamerica.org/donation/">https://www.VANADHAARamerica.org/donation/</a>. VANADHAAR America is a legally registered section 501 (c) (3) entity under US Income tax Laws.</p>
+
+            <h4 class="section-title">If I am a resident of the U.K. and subject to UK income tax will I be eligible for tax exemption?</h4>
+            <p>As a resident of the U.K., you can avail of tax exemption by making a donation to VANADHAAR UK at <a href="https://www.ukVANADHAAR.org/donation/">https://www.ukVANADHAAR.org/donation/</a>. VANADHAAR UK is a legally registered charity under UK Income tax Laws.</p>
+
+            <p><strong>Disclaimer:</strong> The donation options shown are meant to illustrate the change your donation can make to the lives of children. The funds/donations raised by VANADHAAR will be pooled together and allocated to suitable child-related endeavours depending on the need on the ground.</p>
+        </div>
+        <div class="col-md-6 mb-4 p-5">
+            <h3 class="section-title">Yes! I’d like to help</h3>
+            <div class="form-section">
+                <form action="/submit_payment" method="post">
+                    <div class="form-group">
+                        <label for="citizenship">Citizenship*</label>
+                        <select class="form-control" id="citizenship" name="citizenship">
+                            <option value="Indian Citizen">Indian Citizen</option>
+                        </select>
+                        <small class="form-text text-muted">Indian citizen option is for transacting through Indian bank accounts or cards issued by Indian banks.</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Donation Frequency</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="donation_frequency" id="give_once" value="once" checked>
+                            <label class="form-check-label" for="give_once">Give Once</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="donation_frequency" id="give_monthly" value="monthly">
+                            <label class="form-check-label" for="give_monthly">Give Monthly</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Choose an amount to donate</label>
+                        <select class="form-control" id="amount" name="amount">
+                            <option value="3000">₹500</option>
+                            <option value="5000">₹1000</option>
+                            <option value="10000">₹10000</option>
+                            <option value="20000">₹50000</option>
+                            <option value="other">Other Amount</option>
+                        </select>
+                        <div class="form-group mt-3" id="other-amount-group" style="display:none;">
+                            <label for="other-amount">Enter Other Amount</label>
+                            <input type="text" class="form-control" id="other-amount" name="other_amount" placeholder="Enter amount">
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="full_name">Full Name *</label>
+                        <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter your full name">
+                        <small class="form-text text-muted">Special characters not allowed in full name field.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" class="form-control" id="dob" name="dob" placeholder="dd-mm-yyyy">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile Number *</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your mobile number">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pincode">Pincode *</label>
+                        <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter your pincode">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" name="state" placeholder="Enter your state">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" value="INDIA" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="pan_number">PAN Number</label>
+                        <input type="text" class="form-control" id="pan_number" name="pan_number" placeholder="Enter your PAN number">
+                        <small class="form-text text-muted">Please note that if you do not provide your PAN Number, you will not be able to claim 50% tax exemption u/s 80G in India. Information is being collected to comply with government regulations and shall be treated as confidential.</small>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="declaration" name="declaration" required>
+                        <label class="form-check-label text-danger" for="declaration">I hereby declare that I am a citizen of India, making this donation out of my own funds. The information provided is true and correct.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h2>About Us</h2>
+                <p>Vanadhaar is a leading provider of information technology, consulting, and business process services. Our dedicated employees offer strategic insights, technological expertise and industry experience.</p>
+                <p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market, Backed by our strong quality processes and rich experience managing global...</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h2>Useful Links</h2>
+                <ul class="list-unstyled link-list">
+                    <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 map-img">
+                <h2>Contact Us</h2>
+                <address class="md-margin-bottom-40">
+                    Vanaadhar <br>
+                    Delhi <br>
+                    New Delhi, IND <br>
+                    Phone: +91 9159669599 <br>
+                    Email: <a href="mailto:info@anybiz.com" class="">info@vanaadhar.in</a><br>
+                    Web: <a href="smart-eye.html" class="">www.vanadhaar.in</a>
+                </address>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy">
+    <div class="container">
+        <a href="https://www.smarteyeapps.com/">2024&copy; All Rights Reserved | Designed and Developed by vanadhaar</a>
+        <span>
+            <a><i class="fab fa-github"></i></a>
+            <a><i class="fab fa-google-plus-g"></i></a>
+            <a><i class="fab fa-pinterest-p"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script>
+    document.getElementById('amount').addEventListener('change', function() {
+        var otherAmountGroup = document.getElementById('other-amount-group');
+        if (this.value === 'other') {
+            otherAmountGroup.style.display = 'block';
+        } else {
+            otherAmountGroup.style.display = 'none';
+        }
+    });
+</script>
+
 </body>
 </html>
