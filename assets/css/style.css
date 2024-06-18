@@ -301,7 +301,7 @@ header {
     @media screen and (max-width: 991px) {
       header .header-bottom img {
         padding: 5px;
-        margin-top: 0px;
+        margin-top: -9px;
         max-width: 230px; } }
   header .nav-col .navbad {
     display: block;
@@ -327,7 +327,7 @@ header {
     border: 1px solid #CCC;
     border-radius: 50px;
     position: relative;
-    top: 30px;
+    top: 50px;
   right: 0px;}
   
   header .nav-col .navbad li .add{
