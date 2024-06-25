@@ -13,7 +13,8 @@ Description: This Template is created for Youtubers
 * {
   margin: 0px;
   padding: 0px;
-  list-style: none; }
+  list-style: none;
+}
 
 img {
   max-width: 100%; }
@@ -392,7 +393,7 @@ header {
   .slider-captions {
     display: none; } }
 .slider-title {
-  font-size: 66px;
+  font-size: 40px;
   font-weight: 600;
   color: #fff;
   letter-spacing: -3px; }
