@@ -396,7 +396,7 @@ header {
   font-size: 40px;
   font-weight: 600;
   color: #fff;
-  letter-spacing: -3px; }
+  letter-spacing: 0px; }
 
 .slider-text {
   margin-bottom: 20px;
@@ -494,11 +494,11 @@ header {
     font-size: 1.8rem;
     margin-bottom: 20px; }
   .about-us .text-part p {
-    text-indent: 20px;
+    /* text-indent: 10px; */
     margin-bottom: 15px;
     line-height: 27px;
     font-weight: 500;
-    text-align: justify;
+    text-align: left;
     font-size: .9rem; }
   .about-us .image-part .about-quick-box .about-qcard {
     padding: 50px 30px;
@@ -652,7 +652,7 @@ header {
 
 .footer p {
   text-align: justify;
-  text-indent: 20px;
+
   font-size: .9rem; }
 
 .footer .link-list li {
